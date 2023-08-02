@@ -1,0 +1,1526 @@
+fileFormatVersion: 2
+guid: 8ec087dfaa4a57d43a253613cd451509
+ModelImporter:
+  serializedVersion: 20300
+  internalIDToNameTable:
+  - first:
+      74: 3983197037979879870
+    second: Kitsune_2|Attack01
+  - first:
+      74: -1656978161953052156
+    second: Kitsune_2|Attack02
+  - first:
+      74: -3913267917093082410
+    second: Kitsune_2|Attack03
+  - first:
+      74: -5254995143959122876
+    second: Kitsune_2|Damage01
+  - first:
+      74: -3712982338344629697
+    second: Kitsune_2|Damage02
+  - first:
+      74: 8255354192518778756
+    second: Kitsune_2|Die
+  - first:
+      74: 4605358563814991300
+    second: Kitsune_2|Die01
+  - first:
+      74: -2941309385847272609
+    second: Kitsune_2|End
+  - first:
+      74: -3628071588953175928
+    second: Kitsune_2|End02
+  - first:
+      74: -1263376204439779071
+    second: Kitsune_2|Flinch
+  - first:
+      74: 2978703831124379078
+    second: Kitsune_2|Groggy01
+  - first:
+      74: -3609040495007715478
+    second: Kitsune_2|Idle01
+  - first:
+      74: -8036710416451272425
+    second: Kitsune_2|Idle02
+  - first:
+      74: 447473020590143625
+    second: Kitsune_2|Idle03
+  - first:
+      74: 8707589518962432151
+    second: Kitsune_2|Knockback
+  - first:
+      74: -2017039914592305917
+    second: Kitsune_2|Loop
+  - first:
+      74: -3004717676906496260
+    second: Kitsune_2|Loop02
+  - first:
+      74: -4744759788672660196
+    second: Kitsune_2|Run01
+  - first:
+      74: 6836953639358466875
+    second: Kitsune_2|Skill01
+  - first:
+      74: 5714797545649327260
+    second: Kitsune_2|Skill02
+  - first:
+      74: -634786816748221871
+    second: Kitsune_2|Skill03
+  - first:
+      74: 6369424825994391351
+    second: Kitsune_2|Standup
+  - first:
+      74: 1985901764618168733
+    second: Kitsune_2|Start
+  - first:
+      74: -6658073453813591605
+    second: Kitsune_2|Start02
+  - first:
+      74: 3690720646635649553
+    second: Kitsune_2|Walk01
+  - first:
+      74: -566917892213607882
+    second: Attack01
+  - first:
+      74: -7820010813596602565
+    second: Attack02
+  - first:
+      74: -517454539092039161
+    second: Attack03
+  - first:
+      74: 3334455867039798680
+    second: Damage01
+  - first:
+      74: -8869702705218628186
+    second: Damage02
+  - first:
+      74: -4630339522487117836
+    second: Die
+  - first:
+      74: 1934680252021187620
+    second: Die01
+  - first:
+      74: 6618690700278530181
+    second: End
+  - first:
+      74: -6456396609257211296
+    second: End02
+  - first:
+      74: -3554469013500874231
+    second: Flinch
+  - first:
+      74: 6146717672286654039
+    second: Groggy01
+  - first:
+      74: 2646724620217826704
+    second: Idle01
+  - first:
+      74: 6868592044210321722
+    second: Idle02
+  - first:
+      74: 9033954647404137015
+    second: Idle03
+  - first:
+      74: 2768075787365557344
+    second: Knockback
+  - first:
+      74: -1394380028033222937
+    second: Loop
+  - first:
+      74: 5843730871593301006
+    second: Loop02
+  - first:
+      74: 2772812811124783404
+    second: Run01
+  - first:
+      74: 5036976166214097535
+    second: Skill01
+  - first:
+      74: -1468836656878711329
+    second: Skill02
+  - first:
+      74: 4863956522703448088
+    second: Skill03
+  - first:
+      74: 1976455349681283545
+    second: Standup
+  - first:
+      74: -7251055699838741195
+    second: Start
+  - first:
+      74: -4395183610854674847
+    second: Start02
+  - first:
+      74: 4485118894649010602
+    second: Walk01
+  externalObjects: {}
+  materials:
+    materialImportMode: 2
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: "\nClip 'Kitsune_2|Attack01' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Attack02' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Attack03' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Damage01' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Spine1' has translation
+      animation that will be discarded.\n\t'Bip001-Neck' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has translation
+      animation that will be discarded.\n\t'Bip001-L-Thigh' has translation animation
+      that will be discarded.\n\t'Bip001-R-Thigh' has translation animation that
+      will be discarded.\n\nClip 'Kitsune_2|Damage02' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Die' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Die01' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|End' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bone019' has translation
+      animation that will be discarded.\n\t'Bip001-L-Thigh' has translation animation
+      that will be discarded.\n\t'Bip001-R-Thigh' has translation animation that
+      will be discarded.\n\nClip 'Kitsune_2|End02' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Flinch' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Groggy01' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Idle01' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Idle02' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-Neck'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Idle03' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Knockback' has import
+      animation warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Loop' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\nClip 'Kitsune_2|Loop02'
+      has import animation warnings that might lower retargeting quality:\nNote:
+      Activate translation DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine'
+      has translation animation that will be discarded.\n\t'Bip001-Spine' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-Neck'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Run01' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Skill01' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bone019' has translation
+      animation that will be discarded.\n\t'Bip001-L-Thigh' has translation animation
+      that will be discarded.\n\t'Bip001-R-Thigh' has translation animation that
+      will be discarded.\n\nClip 'Kitsune_2|Skill02' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' has translation animation
+      that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Skill03' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Standup' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Neck' is inbetween
+      humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n\nClip 'Kitsune_2|Start' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-L-Thigh' has
+      translation animation that will be discarded.\n\t'Bip001-R-Thigh' has translation
+      animation that will be discarded.\n\nClip 'Kitsune_2|Start02' has import animation
+      warnings that might lower retargeting quality:\nNote: Activate translation
+      DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine' has translation
+      animation that will be discarded.\n\t'Bip001-Spine' is inbetween humanoid transforms
+      and has rotation animation that will be discarded.\n\t'Bip001-Spine1' has translation
+      animation that will be discarded.\n\t'Bone019' has translation animation that
+      will be discarded.\n\t'Bip001-L-Thigh' has translation animation that will
+      be discarded.\n\t'Bip001-R-Thigh' has translation animation that will be discarded.\n\nClip
+      'Kitsune_2|Walk01' has import animation warnings that might lower retargeting
+      quality:\nNote: Activate translation DOF on avatar to improve retargeting quality.\n\t'Bip001-Spine'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-Neck'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'Bip001-L-Clavicle'
+      has translation animation that will be discarded.\n\t'Bip001-R-Clavicle' has
+      translation animation that will be discarded.\n\t'Bip001-L-Thigh' has translation
+      animation that will be discarded.\n\t'Bip001-R-Thigh' has translation animation
+      that will be discarded.\n"
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Attack01
+      takeName: Kitsune_2|Attack01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack02
+      takeName: Kitsune_2|Attack02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 55
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack03
+      takeName: Kitsune_2|Attack03
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Damage01
+      takeName: Kitsune_2|Damage01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Damage02
+      takeName: Kitsune_2|Damage02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die
+      takeName: Kitsune_2|Die
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 60
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Die01
+      takeName: Kitsune_2|Die01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 109
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: End
+      takeName: Kitsune_2|End
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: End02
+      takeName: Kitsune_2|End02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Flinch
+      takeName: Kitsune_2|Flinch
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Groggy01
+      takeName: Kitsune_2|Groggy01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 95
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle01
+      takeName: Kitsune_2|Idle01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle02
+      takeName: Kitsune_2|Idle02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle03
+      takeName: Kitsune_2|Idle03
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Knockback
+      takeName: Kitsune_2|Knockback
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Loop
+      takeName: Kitsune_2|Loop
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Loop02
+      takeName: Kitsune_2|Loop02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Run01
+      takeName: Kitsune_2|Run01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 24
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skill01
+      takeName: Kitsune_2|Skill01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 70
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skill02
+      takeName: Kitsune_2|Skill02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 79
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Skill03
+      takeName: Kitsune_2|Skill03
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 67
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Standup
+      takeName: Kitsune_2|Standup
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Start
+      takeName: Kitsune_2|Start
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 6
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Start02
+      takeName: Kitsune_2|Start02
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Walk01
+      takeName: Kitsune_2|Walk01
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 30
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 1
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton:
+    - name: Kitsune_2(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Kitsune_2
+      parentName: Kitsune_2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Root
+      parentName: Kitsune_2
+      position: {x: 5.898949e-17, y: 0, z: 0.000000007537373}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: Bip001
+      parentName: Root
+      position: {x: -0.006481092, y: 0.40711153, z: 0.003809964}
+      rotation: {x: -0.5000004, y: 0.49999964, z: 0.49999964, w: 0.5000004}
+      scale: {x: 0.9999999, y: 0.9999999, z: 0.9999998}
+    - name: Bip001-Pelvis
+      parentName: Bip001
+      position: {x: 0.000000036554415, y: -0.022602158, z: 0.06806224}
+      rotation: {x: 0.49999994, y: -0.5, z: -0.4999994, w: -0.50000066}
+      scale: {x: 0.9999998, y: 0.9999999, z: 0.9999999}
+    - name: Bip001-Spine
+      parentName: Bip001-Pelvis
+      position: {x: -0.12728666, y: -0.00011884933, z: -0.00000024680048}
+      rotation: {x: 0.0000020861626, y: -0.0000006556511, z: 0.00039815903, w: -1}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Bip001-Spine1
+      parentName: Bip001-Spine
+      position: {x: -0.15142891, y: -0.00015570386, z: 0.00002773921}
+      rotation: {x: -0, y: -0, z: 1.3677945e-12, w: 1}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: Bip001-Neck
+      parentName: Bip001-Spine1
+      position: {x: -0.19245988, y: -0.000024940236, z: 0.000000027241185}
+      rotation: {x: -0, y: -0, z: -0, w: 1}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000002}
+    - name: Bip001-L-Clavicle
+      parentName: Bip001-Neck
+      position: {x: 0.04829135, y: -0.043108255, z: 0.058868866}
+      rotation: {x: 0.70710665, y: 0.0002824198, z: -0.70710677, w: 0.00028052795}
+      scale: {x: 0.99999976, y: 1, z: 1}
+    - name: Bip001-L-UpperArm
+      parentName: Bip001-L-Clavicle
+      position: {x: -0.10206232, y: -0.000000059604645, z: -0.00000013876706}
+      rotation: {x: -0.09902227, y: 0.00050348375, z: 0.0034767336, w: 0.99507904}
+      scale: {x: 1.0000004, y: 1.0000002, z: 1.0000004}
+    - name: Bip001-L-Forearm
+      parentName: Bip001-L-UpperArm
+      position: {x: -0.16795783, y: -0.00000004284084, z: -0.000000035390258}
+      rotation: {x: 0.00000014901158, y: -0.00000005960463, z: -0.015295088, w: 0.99988306}
+      scale: {x: 1, y: 1.0000004, z: 1}
+    - name: Bip001-L-Hand
+      parentName: Bip001-L-Forearm
+      position: {x: -0.1106093, y: 0, z: 0.000000026077032}
+      rotation: {x: 0.70652324, y: -0.020663094, z: 0.020679586, w: -0.70708585}
+      scale: {x: 1, y: 1.0000002, z: 1.0000004}
+    - name: Bip001-L-Finger0
+      parentName: Bip001-L-Hand
+      position: {x: -0.03649529, y: 0.016540468, z: -0.049096018}
+      rotation: {x: -0.37263706, y: -0.12129829, z: -0.014726211, w: 0.91989756}
+      scale: {x: 1.0000001, y: 1, z: 0.9999998}
+    - name: Bip001-L-Finger01
+      parentName: Bip001-L-Finger0
+      position: {x: -0.039728135, y: -0.000000029802322, z: -0.000000031664968}
+      rotation: {x: 0.017512608, y: -0.017704587, z: 0.70312214, w: 0.710633}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000005}
+    - name: Bip001-L-Finger01_end
+      parentName: Bip001-L-Finger01
+      position: {x: -0, y: 0.10000003, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001-L-Finger1
+      parentName: Bip001-L-Hand
+      position: {x: -0.08636435, y: -0.008132048, z: -0.008956991}
+      rotation: {x: -0.00039809934, y: -0.0166995, z: 0.000006591434, w: 0.9998605}
+      scale: {x: 1.0000006, y: 1, z: 1}
+    - name: Bip001-L-Finger11
+      parentName: Bip001-L-Finger1
+      position: {x: -0.032999232, y: -0.000000044703484, z: 0.000000014901161}
+      rotation: {x: 0.00000030311622, y: -0.000000035390237, z: 0.70710796, w: 0.7071056}
+      scale: {x: 1.0000005, y: 1.0000004, z: 1.0000008}
+    - name: Bip001-L-Finger11_end
+      parentName: Bip001-L-Finger11
+      position: {x: -0, y: 0.09999999, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone001
+      parentName: Bip001-L-Hand
+      position: {x: -0.079437956, y: 0.021412462, z: -0.014717855}
+      rotation: {x: -0.41327104, y: 0.9067941, z: 0.07022573, w: 0.04472048}
+      scale: {x: 1.0000005, y: 0.9999998, z: 0.99999946}
+    - name: Bone001_end
+      parentName: Bone001
+      position: {x: -0, y: 0.099999994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FX_Hand_L
+      parentName: Bip001-L-Hand
+      position: {x: -0.04416611, y: -0.00646054, z: 0.0049568787}
+      rotation: {x: -0.69085765, y: -0.2606045, z: -0.323848, w: -0.5915432}
+      scale: {x: 1.0000004, y: 1.0000001, z: 1.0000002}
+    - name: FX_Hand_L_end
+      parentName: FX_Hand_L
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001-R-Clavicle
+      parentName: Bip001-Neck
+      position: {x: 0.041423965, y: -0.043113403, z: -0.06388436}
+      rotation: {x: 0.70710677, y: 0.00028052795, z: 0.70710665, w: -0.0002824198}
+      scale: {x: 0.9999998, y: 0.99999994, z: 1}
+    - name: Bip001-R-UpperArm
+      parentName: Bip001-R-Clavicle
+      position: {x: -0.102062345, y: -0.000000026077032, z: -0.00000005075708}
+      rotation: {x: -0.09586523, y: -0.045545753, z: 0.003861955, w: -0.9943443}
+      scale: {x: 1.0000002, y: 1.0000004, z: 1.0000002}
+    - name: Bip001-R-Forearm
+      parentName: Bip001-R-UpperArm
+      position: {x: -0.1679578, y: -0.000000029802322, z: -0.00000009313226}
+      rotation: {x: -0.000000029802319, y: 0.000000029802319, z: -0.015295269, w: 0.99988306}
+      scale: {x: 1.0000002, y: 1.0000001, z: 0.99999994}
+    - name: Bip001-R-Hand
+      parentName: Bip001-R-Forearm
+      position: {x: -0.11060944, y: -0.00000007357448, z: -0.0000001937151}
+      rotation: {x: 0.7065232, y: -0.020662844, z: -0.020679336, w: 0.7070859}
+      scale: {x: 1, y: 1.0000001, z: 0.99999994}
+    - name: Bip001-R-Finger0
+      parentName: Bip001-R-Hand
+      position: {x: -0.036495205, y: 0.016540505, z: 0.04909587}
+      rotation: {x: 0.37263763, y: 0.121299244, z: -0.014726317, w: 0.91989726}
+      scale: {x: 1.0000002, y: 1.0000005, z: 0.9999998}
+    - name: Bip001-R-Finger01
+      parentName: Bip001-R-Finger0
+      position: {x: -0.039728113, y: -0.00000013038516, z: 0.000000037252903}
+      rotation: {x: -0.017511655, y: 0.017706577, z: 0.703123, w: 0.7106321}
+      scale: {x: 1.0000007, y: 1.0000007, z: 1.0000001}
+    - name: Bip001-R-Finger01_end
+      parentName: Bip001-R-Finger01
+      position: {x: -0, y: 0.099999994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001-R-Finger1
+      parentName: Bip001-R-Hand
+      position: {x: -0.086364284, y: -0.008132111, z: 0.008956954}
+      rotation: {x: 0.00039806953, y: 0.016699363, z: 0.000006560235, w: 0.99986047}
+      scale: {x: 1.0000002, y: 1.0000005, z: 1}
+    - name: Bip001-R-Finger11
+      parentName: Bip001-R-Finger1
+      position: {x: -0.03299924, y: 0.000000013969839, z: 0.00000011920929}
+      rotation: {x: 0.0000033561362, y: -0.000000043772147, z: 0.7071066, w: 0.707107}
+      scale: {x: 1.0000008, y: 1.0000008, z: 1.0000001}
+    - name: Bip001-R-Finger11_end
+      parentName: Bip001-R-Finger11
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone003
+      parentName: Bip001-R-Hand
+      position: {x: -0.091336735, y: 0.0150741, z: 0.045401774}
+      rotation: {x: 0.018795174, y: -0.08156178, z: -0.93341196, w: -0.34890765}
+      scale: {x: 0.99999934, y: 1.0000005, z: 1.0000002}
+    - name: Bone003_end
+      parentName: Bone003
+      position: {x: -0, y: 0.100000024, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FX_Hand_R
+      parentName: Bip001-R-Hand
+      position: {x: -0.04416603, y: -0.0064606927, z: -0.0049578715}
+      rotation: {x: -0.3238474, y: 0.59154403, z: -0.69085675, w: 0.26060578}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1}
+    - name: FX_Hand_R_end
+      parentName: FX_Hand_R
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001-Head
+      parentName: Bip001-Neck
+      position: {x: -0.047528744, y: -0.05436246, z: -0.000000013038516}
+      rotation: {x: 3.3242029e-10, y: -0.00000017798213, z: -0.00039869547, w: -1}
+      scale: {x: 1.0000002, y: 1, z: 1.0000001}
+    - name: Bone005
+      parentName: Bip001-Head
+      position: {x: -0.41783634, y: -0.1341408, z: -0.00000008288771}
+      rotation: {x: 0.00000087296615, y: 0.000000080172406, z: 0.411245, w: 0.9115249}
+      scale: {x: 1, y: 1.0000002, z: 1.0000001}
+    - name: Bone006
+      parentName: Bone005
+      position: {x: -0.34019798, y: 0.00000006775372, z: -0.000000006519258}
+      rotation: {x: -0.00000039803388, y: -0.0000000045352158, z: 0.8259335, w: 0.56376755}
+      scale: {x: 0.99999994, y: 1.0000001, z: 1.0000004}
+    - name: Bone007
+      parentName: Bone006
+      position: {x: -0.30705196, y: 0.00000019650906, z: -0.000000067055225}
+      rotation: {x: 0.000000001322142, y: 0.00000016471176, z: 0.29477048, w: 0.9555681}
+      scale: {x: 0.9999998, y: 1.0000001, z: 0.99999994}
+    - name: Bone007_end
+      parentName: Bone007
+      position: {x: -0, y: 0.09999997, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone016
+      parentName: Bip001-Head
+      position: {x: -0.14086826, y: 0.20301513, z: 0.015235666}
+      rotation: {x: -0.62937856, y: 0.6081133, z: 0.3101267, w: 0.3713521}
+      scale: {x: 1, y: 1.0000002, z: 0.9999999}
+    - name: Bone017
+      parentName: Bone016
+      position: {x: -0.09937641, y: 0.0000074412674, z: -0.000000007450581}
+      rotation: {x: 0.003926008, y: -0.05879782, z: 0.066513345, w: 0.9960439}
+      scale: {x: 0.99999964, y: 0.9999997, z: 1.0000001}
+    - name: Bone017_end
+      parentName: Bone017
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone019
+      parentName: Bip001-Head
+      position: {x: -0.26141116, y: 0.07439838, z: 0.00000006519258}
+      rotation: {x: -0.00000041133617, y: 0.000000077045996, z: 0.484429, w: -0.8748306}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000002}
+    - name: Bone019_end
+      parentName: Bone019
+      position: {x: -0, y: 0.09999997, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FX_Top
+      parentName: Bip001-Head
+      position: {x: -0.40005493, y: 0.023110578, z: 0.00000012293458}
+      rotation: {x: -0.7071074, y: 0.000000811552, z: 0.7071062, w: -0.000000023100258}
+      scale: {x: 1, y: 0.9999998, z: 0.9999997}
+    - name: FX_Top_end
+      parentName: FX_Top
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eye_bone
+      parentName: Bip001-Head
+      position: {x: -0.17001542, y: 0.10024233, z: 0.00000014528632}
+      rotation: {x: 0.00000071213134, y: 0.00000031875055, z: -0.63366467, w: 0.77360785}
+      scale: {x: 1.0000004, y: 1.0000005, z: 1.0000002}
+    - name: eye_bone_end
+      parentName: eye_bone
+      position: {x: -0, y: 0.10000007, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FX_Center
+      parentName: Bip001-Spine1
+      position: {x: 0.013770571, y: -0.038227484, z: -0.000000048428774}
+      rotation: {x: 0.7071072, y: 0.00028149615, z: -0.7071063, w: 0.00028149635}
+      scale: {x: 1.0000001, y: 0.9999999, z: 1}
+    - name: FX_Center_end
+      parentName: FX_Center
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001-L-Thigh
+      parentName: Bip001-Spine
+      position: {x: 0.10822375, y: 0.02184761, z: 0.14065978}
+      rotation: {x: -0.0075150547, y: -0.9801534, z: -0.18773784, w: -0.06322415}
+      scale: {x: 1.0000002, y: 0.9999999, z: 0.9999999}
+    - name: Bip001-L-Calf
+      parentName: Bip001-L-Thigh
+      position: {x: -0.24097085, y: -0.00000008195639, z: 0.000000033527613}
+      rotation: {x: -0.000000026280759, y: 0.00000040233135, z: 0.037367817, w: 0.9993017}
+      scale: {x: 0.99999994, y: 0.9999999, z: 0.9999998}
+    - name: Bip001-L-Foot
+      parentName: Bip001-L-Calf
+      position: {x: -0.18591851, y: 0.0000000013969839, z: -0.00000017136335}
+      rotation: {x: 0.039359517, y: 0.062338356, z: -0.03548825, w: 0.9966471}
+      scale: {x: 0.9999999, y: 0.99999976, z: 0.99999994}
+    - name: Bip001-L-Toe0
+      parentName: Bip001-L-Foot
+      position: {x: -0.044390354, y: 0.07343594, z: 0.00070761197}
+      rotation: {x: 0.00000033341337, y: -0.00000019744031, z: -0.7071068, w: 0.70710677}
+      scale: {x: 1.0000005, y: 1.0000001, z: 1.0000002}
+    - name: Bip001-L-Toe0_end
+      parentName: Bip001-L-Toe0
+      position: {x: -0, y: 0.10000001, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bip001-R-Thigh
+      parentName: Bip001-Spine
+      position: {x: 0.14064915, y: 0.020934418, z: -0.10841677}
+      rotation: {x: -0.0075148884, y: -0.9801539, z: 0.18773514, w: 0.063224114}
+      scale: {x: 1.0000007, y: 0.99999994, z: 1.0000008}
+    - name: Bip001-R-Calf
+      parentName: Bip001-R-Thigh
+      position: {x: -0.24097092, y: 0.000000059604645, z: 0.00000012665987}
+      rotation: {x: 0.00000003582681, y: 0.0000005178153, z: 0.03736787, w: 0.9993016}
+      scale: {x: 0.9999994, y: 1, z: 0.9999992}
+    - name: Bip001-R-Foot
+      parentName: Bip001-R-Calf
+      position: {x: -0.18591848, y: 0.000000009313226, z: -0.00000014901161}
+      rotation: {x: -0.03935958, y: -0.062339026, z: -0.03548856, w: 0.99664706}
+      scale: {x: 1.0000001, y: 1.0000002, z: 1.0000004}
+    - name: Bip001-R-Toe0
+      parentName: Bip001-R-Foot
+      position: {x: -0.04439038, y: 0.07332052, z: -0.0041750674}
+      rotation: {x: -0.00000004470348, y: -0.00000003352761, z: -0.7071069, w: 0.70710677}
+      scale: {x: 1.0000002, y: 1, z: 1.0000005}
+    - name: Bip001-R-Toe0_end
+      parentName: Bip001-R-Toe0
+      position: {x: -0, y: 0.09999998, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Bone020
+      parentName: Bip001-Pelvis
+      position: {x: -0.028921867, y: -0.1161703, z: 0.00000037439167}
+      rotation: {x: -0.00000021420416, y: 0.0000014752147, z: 0.7396404, w: 0.67300236}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Bone021
+      parentName: Bone020
+      position: {x: -0.3884315, y: -0.00000015459955, z: -0.000000037252903}
+      rotation: {x: -0.0000000944635, y: 0.00000033060584, z: -0.18117587, w: 0.9834508}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1.0000001}
+    - name: Bone021_end
+      parentName: Bone021
+      position: {x: -0, y: 0.099999994, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FX_Bottom
+      parentName: Root
+      position: {x: -1.1059557e-17, y: 2.9802338e-10, z: -0.003201678}
+      rotation: {x: -0.70710695, y: 0.00000001700921, z: -0.00000001700921, w: 0.7071067}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: FX_Bottom_end
+      parentName: FX_Bottom
+      position: {x: -0, y: 0.1, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: FX_Front
+      parentName: Root
+      position: {x: 0.00000003814697, y: 0.61361074, z: 0.43437165}
+      rotation: {x: -0.70710725, y: -0.000000028247422, z: -0.000000028247443, w: 0.7071064}
+      scale: {x: 1, y: 0.9999999, z: 0.9999999}
+    - name: FX_Front_end
+      parentName: FX_Front
+      position: {x: -0, y: 0.100000024, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: gun_bone
+      parentName: Root
+      position: {x: 0.4040903, y: 0.94420433, z: -0.177263}
+      rotation: {x: -0.00012171267, y: 0.70699245, z: -0.000024467703, w: 0.7072211}
+      scale: {x: 1.0000001, y: 0.99999994, z: 1}
+    - name: gun_bone_end
+      parentName: gun_bone
+      position: {x: -0, y: 0.09999991, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: mo
+      parentName: Kitsune_2(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 1, y: 1, z: 1}
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 1
+  remapMaterialsIfMaterialImportModeIsNone: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
