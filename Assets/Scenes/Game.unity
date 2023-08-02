@@ -758,10 +758,15 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 7edc2e6cea3104196b2430a7278422c0, type: 2}
+    - target: {fileID: -2218988781941498134, guid: 8ec087dfaa4a57d43a253613cd451509,
+        type: 3}
+      propertyPath: m_Name
+      value: Lil Bro
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 8ec087dfaa4a57d43a253613cd451509,
         type: 3}
       propertyPath: m_Name
-      value: Kitsune_2
+      value: Lil Bro
       objectReference: {fileID: 0}
     - target: {fileID: 5866666021909216657, guid: 8ec087dfaa4a57d43a253613cd451509,
         type: 3}
