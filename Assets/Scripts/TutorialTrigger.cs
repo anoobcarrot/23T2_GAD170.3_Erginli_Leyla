@@ -1,22 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class TutorialTrigger : MonoBehaviour
 {
-    // When the player character enters this zone,
-    // Display the tutorial text
+    [SerializeField] private GameObject tutorialText;
+    [SerializeField] private GameObject tutorialImage;
+    [SerializeField] private GameObject tutorialButton;
 
-    [SerializeField] TextMeshPro tutorialText;
+    public UnityEvent onPlayerEnterTrigger;
+
+private bool tutorialShown = false;
 
     private void OnTriggerEnter(Collider other)
     {
-        // If the player character triggers this method
-        if (other.CompareTag("Player"))
+        if (!tutorialShown && other.CompareTag("Player"))
         {
-            // Show tutorial text
-            tutorialText.enabled = true;
+            tutorialShown = true;
+            onPlayerEnterTrigger.Invoke(); // Raise the event when the player enters the trigger
         }
     }
 }
+   
+
+
