@@ -18,12 +18,20 @@ public class LavaAndTutorial : MonoBehaviour
     [SerializeField] private GameObject tutorialImage;
     [SerializeField] private GameObject spawnBlocker;
     [SerializeField] private TutorialTrigger tutorialTrigger;
+    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private Button respawnButton;
+    [SerializeField] private GameObject respawnImage;
+    [SerializeField] private Text respawnText;
+    [SerializeField] private Vector3 initialPosition;
+    [SerializeField] private int timesToRise = 0;
 
+    public bool isPlayerDead = false;
     private bool playerEnteredTrigger = false;
-    private bool shouldRise = false;
-    private bool hasDelayed = false;
+    [SerializeField] private bool shouldRise = false;
+    [SerializeField] private bool notDelayed = false;
     private float previousRiseTime = 0.0f;
     private float startTime;
+    [SerializeField] private Vector3 initialScale;
 
     private void Start()
     {
@@ -33,6 +41,11 @@ public class LavaAndTutorial : MonoBehaviour
         tutorialButton.gameObject.SetActive(false);
         startTime = Time.time;
         tutorialTrigger.onPlayerEnterTrigger.AddListener(ShowTutorial);
+        shouldRise = false;
+        notDelayed = false;
+        // Store the initial position when the scene starts
+        initialPosition = transform.position;
+        initialScale = transform.localScale;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -40,28 +53,31 @@ public class LavaAndTutorial : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             playerEnteredTrigger = true;
+
+            // Show the tutorial
+            ShowTutorial();
         }
     }
 
-            private void ShowTutorial()
+    private void ShowTutorial()
     {
         // Check if the tutorial has already been shown
         if (!PlayerPrefs.HasKey("TutorialShown"))
-        { 
+        {
             // Show the tutorial text
             tutorialText.gameObject.SetActive(true);
 
-        // Show the tutorial image
-        tutorialImage.SetActive(true);
+            // Show the tutorial image
+            tutorialImage.SetActive(true);
 
-        // Show the button
-        tutorialButton.gameObject.SetActive(true);
+            // Show the button
+            tutorialButton.gameObject.SetActive(true);
 
-        tutorialButton.onClick.AddListener(StartGame); // Listen to the button click event
-        tutorialButton.onClick.AddListener(HideTutorialImage); // Listen to the button click event
+            tutorialButton.onClick.AddListener(StartGame); // Listen to the button click event
+            tutorialButton.onClick.AddListener(HideTutorialImage); // Listen to the button click event
 
-        // Set the PlayerPrefs variable to remember the tutorial has been shown
-        PlayerPrefs.SetInt("TutorialShown", 1);
+            // Set the PlayerPrefs variable to remember the tutorial has been shown
+            PlayerPrefs.SetInt("TutorialShown", 1);
         }
         else
         {
@@ -84,6 +100,11 @@ public class LavaAndTutorial : MonoBehaviour
         tutorialButton.gameObject.SetActive(false);
         StartCoroutine(CountdownSequence());
         StartCoroutine(StartRisingDelayed());
+        shouldRise = false;
+        notDelayed = false;
+        ResetPosition();
+        // Reset timesToRise
+        timesToRise = 0;
     }
 
     private IEnumerator CountdownSequence()
@@ -108,6 +129,12 @@ public class LavaAndTutorial : MonoBehaviour
 
         spawnBlocker.gameObject.SetActive(false);
         startTime = Time.time;
+        yield return new WaitForSeconds(30.0f);
+        ResetPosition();
+        shouldRise = true;
+        notDelayed = true;
+
+
     }
 
     private void Update()
@@ -117,27 +144,40 @@ public class LavaAndTutorial : MonoBehaviour
             ShowTutorial();
             playerEnteredTrigger = false; // Reset the flag to prevent showing the tutorial repeatedly
         }
-        if (shouldRise)
+        else
         {
             UpdateTimerText();
             float elapsedTime = Time.time - startTime;
             float distanceToRise = (elapsedTime / riseInterval) * riseSpeed;
 
-            // Calculate how many times to rise since the last rise
-            int timesToRise = Mathf.FloorToInt((Time.time - previousRiseTime) / riseInterval);
-
-            if (timesToRise > 0)
+            if (notDelayed)
             {
+                // Calculate how many times to rise since the last rise
+                timesToRise = Mathf.FloorToInt((Time.time - previousRiseTime) / riseInterval);
+           
+            }
+            if (shouldRise)
+            {
+                // Calculate how many times to rise since the start of the game
+                int timesToRise = Mathf.FloorToInt(elapsedTime / riseInterval);
+
+                // Update lava's position by changing its Y scale
+                Vector3 newScale = new Vector3(transform.localScale.x, initialScale.y + timesToRise, transform.localScale.z);
+                transform.localScale = newScale;
+
+                // if (shouldRise)
+                //if (timesToRise > 0)
+           // {
                 // Update lava's position
-                transform.position = new Vector3(transform.position.x, transform.position.y + timesToRise, transform.position.z);
+               // transform.position = new Vector3(transform.position.x, transform.position.y + timesToRise, transform.position.z);
 
                 // Update previous rise time
-                previousRiseTime = Time.time;
+              //  previousRiseTime = Time.time;
             }
         }
     }
 
-    private void UpdateTimerText()
+        private void UpdateTimerText()
     {
         float elapsedTime = Time.time - startTime;
         float remainingTime = Mathf.Max(0f, riseDelay - elapsedTime);
@@ -159,7 +199,7 @@ public class LavaAndTutorial : MonoBehaviour
 
     private IEnumerator RiseEveryInterval()
     {
-        while (true)
+        if (shouldRise)
         {
             yield return new WaitForSeconds(riseInterval);
             transform.position = new Vector3(transform.position.x, transform.position.y + 1.0f, transform.position.z);
@@ -169,5 +209,13 @@ public class LavaAndTutorial : MonoBehaviour
     private void StartRising()
     {
         shouldRise = true;
+    }
+    public void ResetPosition()
+    {
+        // Reset the lava's position to the initial position
+        transform.position = initialPosition;
+
+        // Reset timesToRise
+        timesToRise = 0;
     }
 }
