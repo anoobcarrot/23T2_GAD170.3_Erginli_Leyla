@@ -20,6 +20,11 @@ public class PlayerMovement : MonoBehaviour
     private float yaw = 0.0f;
     private float pitch = 0.0f;
 
+    // SPRINTING
+    [SerializeField] private bool isSprinting = false;
+    [SerializeField] private float sprintSpeed = 21f;
+    [SerializeField] private float normalSpeed;
+
     // This must be linked to the object that has the "Character Controller" in the inspector. You may need to add this component to the object
     public CharacterController controller;
     private Vector3 velocity;
@@ -44,6 +49,8 @@ public class PlayerMovement : MonoBehaviour
             // ...then this searches the components on the gameobject and gets a reference to the CharacterController class
             controller = GetComponent<CharacterController>();
         }
+        // Store the initial normal walking speed
+        normalSpeed = speed;
     }
 
     private void Update()
@@ -81,7 +88,28 @@ public class PlayerMovement : MonoBehaviour
 
         // Finally, it applies that vector it just made to the character
         controller.Move(move * speed * Time.deltaTime + velocity * Time.deltaTime);
+
+        // Check for sprint input
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            isSprinting = true;
+            speed = sprintSpeed; // Set the speed to the sprint speed
+        }
+
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            isSprinting = false;
+            speed = normalSpeed; // Reset the speed to normal
+        }
+
+        if (isSprinting)
+        {
+            speed = sprintSpeed; // Set the speed to the sprint speed
+        }
+        else
+        {
+            speed = normalSpeed; // Reset the speed to normal
+        }
     }
 }
-
 

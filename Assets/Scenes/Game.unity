@@ -2933,7 +2933,7 @@ Transform:
   - {fileID: 2014904314}
   - {fileID: 961739753}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!143 &1627283804
 CharacterController:
@@ -2965,6 +2965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a8f55c73af314b739402f607ba717f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isSprinting: 0
+  sprintSpeed: 200
+  normalSpeed: 0
   controller: {fileID: 1627283804}
   gravity: -20
   groundDistance: 0.4
@@ -3492,7 +3495,7 @@ PrefabInstance:
     - target: {fileID: 834014572363894091, guid: f5ce2328b9d2644a78d2bf56594e90b7,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 834014572363894091, guid: f5ce2328b9d2644a78d2bf56594e90b7,
         type: 3}
