@@ -18,7 +18,7 @@ public class LavaAndTutorial : MonoBehaviour
     [SerializeField] private GameObject tutorialImage;
     [SerializeField] private GameObject spawnBlocker;
     [SerializeField] private TutorialTrigger tutorialTrigger;
-    [SerializeField] private PlayerMovement playerMovement;
+    [SerializeField] private PlayerMovement[] playerMovements;
     [SerializeField] private Button respawnButton;
     [SerializeField] private GameObject respawnImage;
     [SerializeField] private Text respawnText;
@@ -165,6 +165,7 @@ public class LavaAndTutorial : MonoBehaviour
                 Vector3 newScale = new Vector3(transform.localScale.x, initialScale.y + timesToRise, transform.localScale.z);
                 transform.localScale = newScale;
 
+                // OLD SCRIPT DONT NEED, SAVED JUST IN CASE
                 // if (shouldRise)
                 //if (timesToRise > 0)
            // {

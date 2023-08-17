@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class PlayerDeath : MonoBehaviour
 {
-    [SerializeField] private PlayerMovement playerMovement;
     [SerializeField] private SpawnManager spawnManager;
     [SerializeField] private RespawnButton respawnButton;
     [SerializeField] private LavaAndTutorial lavaAndTutorial;
+    [SerializeField] private PlayerMovement[] playerMovements; // Array of PlayerMovement scripts
 
     public void Die()
     {
@@ -15,11 +15,10 @@ public class PlayerDeath : MonoBehaviour
 
         lavaAndTutorial.isPlayerDead = true;
 
-        // // Disable player controls
-         PlayerController playerController = GetComponent<PlayerController>();
-        if (playerController != null)
+        // Disable movement for all player characters
+        foreach (PlayerMovement playerMovement in playerMovements)
         {
-            playerController.enabled = false;
+            playerMovement.DisableMovement();
         }
 
         // Call the respawn method from the respawn script
