@@ -49,7 +49,7 @@ public class SpawnManager : MonoBehaviour
     private void ActivateCharacterCamera(string characterName)
     {
         // Activate the camera associated with the spawned character
-        GameObject characterCamera = GameObject.Find(characterName + "Camera"); // Adjust the camera naming
+        GameObject characterCamera = GameObject.Find(characterName + "Camera"); 
         if (characterCamera != null)
         {
             characterCamera.SetActive(true);

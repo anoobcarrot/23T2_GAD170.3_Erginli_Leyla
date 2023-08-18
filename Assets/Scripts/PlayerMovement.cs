@@ -14,17 +14,21 @@ public class PlayerMovement : MonoBehaviour
     // The mouse will let you turn the object, and therefore, the camera.
 
     // These variables (visible in the inspector) are for you to set up to match the right feel
-    private float speed = 12f;
-    private float speedH = 2.0f;
-    private float speedV = 2.0f;
-    private float yaw = 0.0f;
-    private float pitch = 0.0f;
+    [SerializeField] private float speed = 12f;
+    private float speedH = 7f;
+    private float speedV = 7f;
+    [SerializeField] private float yaw = 0.0f;
+    [SerializeField] private float pitch = 0.0f;
     Animator anim;
     Rigidbody rb;
+
+    [SerializeField] private Camera playerCamera;
 
     [SerializeField] private LavaAndTutorial lavaAndTutorial;
 
     [SerializeField] private PlayerDeath playerDeath;
+
+    [SerializeField] private ParticleSystem groundImpactParticles;
 
     [SerializeField] private bool allowMovement = true;
 
@@ -32,6 +36,8 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private bool isSprinting = false;
     [SerializeField] private float sprintSpeed = 21f;
     [SerializeField] private float normalSpeed;
+
+    [SerializeField] private ParticleSystem deathParticles;
 
     // SPAWN
     [SerializeField] private Transform spawnPoint; // Reference to the spawn point Transform
@@ -54,6 +60,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void Start()
     {
+        // Get a reference to the camera
+        playerCamera = Camera.main;
+        if (playerCamera == null)
+        {
+            Debug.LogError("Player camera reference is not assigned!");
+        }
+
         // If the variable "controller" is empty...
         if (controller == null)
         {
@@ -72,8 +85,16 @@ public class PlayerMovement : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             Debug.Log("Collided with ground"); // Debug statement
+
+            // Play the ground impact particles
+            if (groundImpactParticles != null)
+            {
+                groundImpactParticles.Play();
+            }
+
             TeleportToSpawn();
         }
+
     }
 
     private void TeleportToSpawn()
@@ -99,11 +120,37 @@ public class PlayerMovement : MonoBehaviour
         yaw += speedH * Input.GetAxis("Mouse X");
         pitch -= speedV * Input.GetAxis("Mouse Y");
 
+        // Limit the pitch angle to prevent over-rotation
+        pitch = Mathf.Clamp(pitch, -80f, 80f);
+
+        // Rotate the camera based on the pitch angle
+        if (playerCamera != null)
+        {
+            // FIXED THE ISSUE Debug.Log("Pitch: " + pitch);
+            // FIXED THE ISSUE Debug.Log("Camera Rotation: " + playerCamera.transform.localRotation.eulerAngles);
+            playerCamera.transform.localRotation = Quaternion.Euler(pitch, 0.0f, 0.0f);
+        }
+
+        // Rotate the player object based on the pitch angle
+        transform.localRotation = Quaternion.Euler(pitch, 0.0f, 0.0f);
+
         // Get the Left/Right and Forward/Back values of the input being used (WASD, Joystick etc.)
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
         Vector3 move = Vector3.zero; // Declare the move variable
+
+        // Update the position of the particle system to match the player's position
+        if (groundImpactParticles != null)
+        {
+            groundImpactParticles.transform.position = transform.position;
+        }
+
+        // Update the position of the particle system to match the player's position
+        if (deathParticles != null)
+        {
+            deathParticles.transform.position = transform.position;
+        }
 
         // Let the player jump if they are on the ground and they press the jump button
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -165,15 +212,17 @@ public class PlayerMovement : MonoBehaviour
             {
                 speed = normalSpeed; // Reset the speed to normal
             }
-            
-            if (lavaAndTutorial.isPlayerDead == true)
 
-            // Disable movement for all player characters
+            if (lavaAndTutorial.isPlayerDead == true)
+            {
+                // Disable movement for all player characters
                 DisableMovement();
             }
         }
-        // Method to enable or disable movement
-        public void SetAllowMovement(bool allow)
+    }
+
+    // Method to enable or disable movement
+    public void SetAllowMovement(bool allow)
         {
             allowMovement = allow;
         }

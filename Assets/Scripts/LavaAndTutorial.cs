@@ -24,6 +24,8 @@ public class LavaAndTutorial : MonoBehaviour
     [SerializeField] private Text respawnText;
     [SerializeField] private Vector3 initialPosition;
     [SerializeField] private int timesToRise = 0;
+    [SerializeField] private AudioSource backgroundMusicAudioSource; // Reference to the background Audio Source component
+    [SerializeField] private AudioSource countdownAudioSource; // Reference to the countdown Audio Source component
 
     public bool isPlayerDead = false;
     private bool playerEnteredTrigger = false;
@@ -112,7 +114,12 @@ public class LavaAndTutorial : MonoBehaviour
         timerText.gameObject.SetActive(false);
         countdownText.gameObject.SetActive(true);
         countdownText.text = "3";
-        yield return new WaitForSeconds(1.0f);
+
+        if (countdownAudioSource != null)
+        {
+            countdownAudioSource.Play();
+            yield return new WaitForSeconds(1.0f);
+        }
 
         countdownText.text = "2";
         yield return new WaitForSeconds(1.0f);
@@ -126,6 +133,16 @@ public class LavaAndTutorial : MonoBehaviour
 
         goText.gameObject.SetActive(false);
         timerText.gameObject.SetActive(true);
+
+        // Check if the background music Audio Source is assigned
+        if (backgroundMusicAudioSource != null)
+        {
+            backgroundMusicAudioSource.Play(); // Play the background music
+        }
+        else
+        {
+            Debug.LogError("Background Music Audio Source is not assigned!");
+        }
 
         spawnBlocker.gameObject.SetActive(false);
         startTime = Time.time;
