@@ -31,11 +31,14 @@ public class EndGameTrigger : MonoBehaviour
         }
     }
 
-    private void Update()
+    private void OnTriggerStay(Collider other)
     {
-        if (!gameWon && escapeText.gameObject.activeSelf && Input.GetMouseButtonDown(0)) // 0 represents the left mouse button
+        if (other.CompareTag("Player"))
         {
-            WinGame();
+            if (!gameWon && escapeText.gameObject.activeSelf && Input.GetMouseButtonDown(0)) // 0 represents the left mouse button
+            {
+                WinGame();
+            }
         }
     }
 
