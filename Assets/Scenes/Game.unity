@@ -1011,6 +1011,8 @@ MonoBehaviour:
   winText: {fileID: 949169911}
   returnButton: {fileID: 424042490}
   winImage: {fileID: 1324259369}
+  menuButton: {fileID: 431390587}
+  tutorialButton: {fileID: 1957378050}
 --- !u!1 &235911807
 GameObject:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DisappearingTutorialTrigger : MonoBehaviour
 {
-    [SerializeField] GameObject tutorial3DText; // Assign the 3D text tutorial prefab in the Inspector
+    [SerializeField] GameObject tutorial3DText; // 3D text tutorial, assigning in inspector
 
     private void OnTriggerEnter(Collider other)
     {

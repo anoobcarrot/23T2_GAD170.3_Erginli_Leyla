@@ -10,6 +10,8 @@ public class EndGameTrigger : MonoBehaviour
     [SerializeField] private Text winText; // Reference to the "You have won" text
     [SerializeField] private Button returnButton; // Reference to the return to main menu button
     [SerializeField] private GameObject winImage;
+    [SerializeField] private Button menuButton; // Reference to Main Menu Button already on screen
+    [SerializeField] private Button tutorialButton; // Reference to the Tutorial Button already on screen
 
     private bool gameWon = false;
 
@@ -40,6 +42,8 @@ public class EndGameTrigger : MonoBehaviour
     private void WinGame()
     {
         gameWon = true;
+        tutorialButton.gameObject.SetActive(false);
+        menuButton.gameObject.SetActive(false);
         escapeText.gameObject.SetActive(false);
         winText.gameObject.SetActive(true);
         winImage.gameObject.SetActive(true);
