@@ -9,6 +9,7 @@ public class PlayerDeath : MonoBehaviour
     [SerializeField] private LavaAndTutorial lavaAndTutorial;
     [SerializeField] private PlayerMovement[] playerMovements; // Array of PlayerMovement scripts
     [SerializeField] private ParticleSystem deathParticles;
+    [SerializeField] private AudioSource deathAudio;
 
     public void Die()
     {
@@ -26,6 +27,12 @@ public class PlayerDeath : MonoBehaviour
         if (deathParticles != null)
         {
             deathParticles.Play();
+        }
+
+        // Play the death audio sound
+        if (deathAudio != null)
+        {
+            deathAudio.Play();
         }
 
         // Call the respawn method from the respawn script

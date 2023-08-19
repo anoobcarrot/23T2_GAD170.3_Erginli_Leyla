@@ -42,6 +42,8 @@ public class PlayerMovement : MonoBehaviour
     // SPAWN
     [SerializeField] private Transform spawnPoint; // Reference to the spawn point Transform
 
+    [SerializeField] private AudioSource jumpAudio;
+
     // This must be linked to the object that has the "Character Controller" in the inspector. You may need to add this component to the object
     public CharacterController controller;
     private Vector3 velocity;
@@ -150,6 +152,18 @@ public class PlayerMovement : MonoBehaviour
         if (deathParticles != null)
         {
             deathParticles.transform.position = transform.position;
+        }
+
+        if (Input.GetButtonDown("Jump") && isGrounded)
+        {
+            velocity.y = Mathf.Sqrt(jumpHeight * -2 * gravity);
+            anim.SetTrigger("jump");
+
+            // Play the jump audio
+            if (jumpAudio != null)
+            {
+                jumpAudio.Play();
+            }
         }
 
         // Let the player jump if they are on the ground and they press the jump button
