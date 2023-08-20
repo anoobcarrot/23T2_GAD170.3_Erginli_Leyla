@@ -20,6 +20,5 @@ public class CharacterButton : MonoBehaviour
     public void OnButtonClick()
     {
         selectionManager.SelectCharacter(characterName);
-        uiManager.UpdateSelectedCharacterText(characterName); // Update the selected character text
     }
 }

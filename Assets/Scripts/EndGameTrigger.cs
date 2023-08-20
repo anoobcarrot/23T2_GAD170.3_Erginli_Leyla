@@ -13,6 +13,11 @@ public class EndGameTrigger : MonoBehaviour
     [SerializeField] private Button menuButton; // Reference to Main Menu Button already on screen
     [SerializeField] private Button tutorialButton; // Reference to the Tutorial Button already on screen
 
+    [SerializeField] private AudioSource buttonAudioSource;
+
+    [SerializeField] private string nextSceneName;
+    [SerializeField] private float delayBeforeTransition = 0.5f; // Adjust the delay as needed
+
     private bool gameWon = false;
 
     private void OnTriggerEnter(Collider other)
@@ -55,7 +60,19 @@ public class EndGameTrigger : MonoBehaviour
 
     public void ReturnToMainMenu()
     {
-        // Go scene
-        SceneManager.LoadScene("Main Menu");
+        // Play the button click sound from the AudioSource
+        buttonAudioSource.Play();
+
+        // Start the delayed scene transition
+        StartCoroutine(DelayedSceneTransition());
+    }
+
+    private IEnumerator DelayedSceneTransition()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delayBeforeTransition);
+
+        // Transition to the next scene
+        SceneManager.LoadScene(nextSceneName);
     }
 }

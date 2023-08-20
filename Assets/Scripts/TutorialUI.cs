@@ -7,39 +7,56 @@ public class TutorialUI : MonoBehaviour
 {
     [SerializeField] private Text tutorialText; // Reference to the tutorial text UI element
     [SerializeField] private GameObject tutorialImage;
-    [SerializeField] private Button okButton; // Reference to the OK button UI element
+    [SerializeField] private Button exitButton; // Reference to the exit button UI element
+    [SerializeField] private float delayBeforeTransition = 0.5f; // Adjust the delay as needed
+    [SerializeField] private AudioSource buttonAudioSource;
 
     private void Start()
     {
         // Hide the tutorial UI initially
         tutorialText.gameObject.SetActive(false);
         tutorialImage.SetActive(false);
-        okButton.gameObject.SetActive(false);
-
-        // Set up button click event
-        okButton.onClick.AddListener(OnOkButtonClicked);
+        exitButton.gameObject.SetActive(false);
     }
 
     public void ShowTutorial(string text)
     {
+
+        // Play the button click sound from the AudioSource
+        buttonAudioSource.Play();
+
+        // Start the delayed scene transition
+        StartCoroutine(DelayShowTutorial());
+    }
+
+    private IEnumerator DelayShowTutorial()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delayBeforeTransition);
+
         // Show the tutorial UI
         tutorialText.gameObject.SetActive(true);
         tutorialImage.SetActive(true);
-        okButton.gameObject.SetActive(true);
-
+        exitButton.gameObject.SetActive(true);
     }
 
-    private void HideTutorial()
+    public void CloseTutorial()
     {
+        /// Play the button click sound from the AudioSource
+        buttonAudioSource.Play();
+
+        // Start the delayed scene transition
+        StartCoroutine(DelayCloseTutorial());
+    }
+
+    private IEnumerator DelayCloseTutorial()
+    {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delayBeforeTransition);
+
         // Hide the tutorial UI
         tutorialText.gameObject.SetActive(false);
-        okButton.gameObject.SetActive(false);
+        exitButton.gameObject.SetActive(false);
         tutorialImage.SetActive(false);
-    }
-
-    public void OnOkButtonClicked()
-    {
-        // Continue with the parkour 
-        HideTutorial();
     }
 }

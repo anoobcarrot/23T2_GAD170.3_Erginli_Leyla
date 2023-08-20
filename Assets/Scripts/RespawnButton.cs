@@ -11,7 +11,7 @@ public class RespawnButton : MonoBehaviour
     [SerializeField] private GameObject respawnImage;
     [SerializeField] private Text respawnText;
     [SerializeField] private SpawnManager spawnManager;
-    [SerializeField] private GameScene gameScene;
+    [SerializeField] private RespawnScene respawnScene;
 
     private Button button;
 
@@ -63,7 +63,7 @@ public class RespawnButton : MonoBehaviour
         // Respawn the player characters and reset the lava's position
         lavaAndTutorial.isPlayerDead = false;
         lavaAndTutorial.ResetPosition();
-        gameScene.RestartScene();
+        respawnScene.RestartScene();
     }
 
 }

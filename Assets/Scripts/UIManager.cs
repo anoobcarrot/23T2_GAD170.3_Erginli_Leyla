@@ -8,17 +8,24 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Text selectedCharacterText;
     [SerializeField] private GameObject startButton;
 
-    private CharacterSelectionManager selectionManager;
-
     private void Start()
     {
-        selectionManager = GetComponent<CharacterSelectionManager>();
-        startButton.SetActive(false); // Hide the start button initially
+        startButton.SetActive(true);
     }
 
     public void UpdateSelectedCharacterText(string characterName)
     {
         selectedCharacterText.text = "You have chosen: " + characterName;
-        startButton.SetActive(true); // Show the start button
+    }
+
+    public void EnableStartButton()
+    {
+        startButton.SetActive(true);
+    }
+
+    public void StartGame()
+    {
+        CharacterSelectionManager selectionManager = GetComponent<CharacterSelectionManager>();
+        selectionManager.StartGame(); // Call the StartGame method from the CharacterSelectionManager
     }
 }

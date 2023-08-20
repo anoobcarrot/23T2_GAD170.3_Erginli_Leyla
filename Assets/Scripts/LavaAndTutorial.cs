@@ -27,6 +27,9 @@ public class LavaAndTutorial : MonoBehaviour
     [SerializeField] private AudioSource backgroundMusicAudioSource; // Reference to the background Audio Source component
     [SerializeField] private AudioSource countdownAudioSource; // Reference to the countdown Audio Source component
 
+    [SerializeField] private float delayBeforeTransition = 0.5f; // Adjust the delay as needed
+    [SerializeField] private AudioSource buttonAudioSource;
+
     public bool isPlayerDead = false;
     private bool playerEnteredTrigger = false;
     [SerializeField] private bool shouldRise = false;
@@ -75,8 +78,7 @@ public class LavaAndTutorial : MonoBehaviour
             // Show the button
             tutorialButton.gameObject.SetActive(true);
 
-            tutorialButton.onClick.AddListener(StartGame); // Listen to the button click event
-            tutorialButton.onClick.AddListener(HideTutorialImage); // Listen to the button click event
+            tutorialButton.onClick.AddListener(StartGameButtonClicked); // Listen to the button click event
 
             // Set the PlayerPrefs variable to remember the tutorial has been shown
             PlayerPrefs.SetInt("TutorialShown", 1);
@@ -90,14 +92,33 @@ public class LavaAndTutorial : MonoBehaviour
         }
     }
 
-    private void HideTutorialImage()
+    private void StartGameButtonClicked()
     {
-        tutorialImage.SetActive(false); // Hide the tutorial image
-        StartGame(); // Proceed to the countdown and game
+        // Play the button click sound from the AudioSource
+        buttonAudioSource.Play();
+
+        // Start the delayed scene transition
+        StartCoroutine(DelayCloseTutorial());
     }
 
-    private void StartGame()
+    private IEnumerator DelayCloseTutorial()
     {
+        // Wait for the specified delay
+        yield return new WaitForSeconds(delayBeforeTransition);
+
+        // Hide the tutorial UI
+        tutorialText.gameObject.SetActive(false);
+        tutorialButton.gameObject.SetActive(false);
+        tutorialImage.SetActive(false);
+
+        // Start the StartGame coroutine
+        StartCoroutine(StartGame());
+    }
+
+    private IEnumerator StartGame()
+    {
+        yield return new WaitForSeconds(0.1f);
+
         tutorialText.gameObject.SetActive(false);
         tutorialButton.gameObject.SetActive(false);
         StartCoroutine(CountdownSequence());
