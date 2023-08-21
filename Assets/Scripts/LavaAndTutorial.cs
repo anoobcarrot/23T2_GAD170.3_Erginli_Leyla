@@ -13,9 +13,8 @@ public class LavaAndTutorial : MonoBehaviour
     [SerializeField] private Text countdownText;
     [SerializeField] private Text goText;
     [SerializeField] private Text lavaText;
-    [SerializeField] private Text tutorialText; // Reference to the tutorial text UI element
-    [SerializeField] private Button tutorialButton; // Reference to the button UI element
-    [SerializeField] private GameObject tutorialImage;
+    [SerializeField] private GameObject tutorialUI;
+    [SerializeField] private Button tutorialButton;
     [SerializeField] private GameObject spawnBlocker;
     [SerializeField] private TutorialTrigger tutorialTrigger;
     [SerializeField] private PlayerMovement[] playerMovements;
@@ -41,9 +40,7 @@ public class LavaAndTutorial : MonoBehaviour
     private void Start()
     {
         PlayerPrefs.DeleteKey("TutorialShown");
-        tutorialText.gameObject.SetActive(false);
-        tutorialImage.SetActive(false);
-        tutorialButton.gameObject.SetActive(false);
+        tutorialUI.gameObject.SetActive(false);
         startTime = Time.time;
         tutorialTrigger.onPlayerEnterTrigger.AddListener(ShowTutorial);
         shouldRise = false;
@@ -69,14 +66,8 @@ public class LavaAndTutorial : MonoBehaviour
         // Check if the tutorial has already been shown
         if (!PlayerPrefs.HasKey("TutorialShown"))
         {
-            // Show the tutorial text
-            tutorialText.gameObject.SetActive(true);
-
-            // Show the tutorial image
-            tutorialImage.SetActive(true);
-
-            // Show the button
-            tutorialButton.gameObject.SetActive(true);
+            // Show the tutorial UI
+            tutorialUI.gameObject.SetActive(true);
 
             tutorialButton.onClick.AddListener(StartGameButtonClicked); // Listen to the button click event
 
@@ -85,10 +76,8 @@ public class LavaAndTutorial : MonoBehaviour
         }
         else
         {
-            // Hide the tutorial text, image, and button
-            tutorialText.gameObject.SetActive(false);
-            tutorialImage.SetActive(false);
-            tutorialButton.gameObject.SetActive(false);
+            // Hide the tutorial text, image, button and title
+            tutorialUI.gameObject.SetActive(false);
         }
     }
 
@@ -107,9 +96,7 @@ public class LavaAndTutorial : MonoBehaviour
         yield return new WaitForSeconds(delayBeforeTransition);
 
         // Hide the tutorial UI
-        tutorialText.gameObject.SetActive(false);
-        tutorialButton.gameObject.SetActive(false);
-        tutorialImage.SetActive(false);
+        tutorialUI.gameObject.SetActive(false);
 
         // Start the StartGame coroutine
         StartCoroutine(StartGame());
@@ -119,8 +106,6 @@ public class LavaAndTutorial : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
 
-        tutorialText.gameObject.SetActive(false);
-        tutorialButton.gameObject.SetActive(false);
         StartCoroutine(CountdownSequence());
         StartCoroutine(StartRisingDelayed());
         shouldRise = false;

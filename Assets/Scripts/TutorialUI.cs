@@ -5,8 +5,7 @@ using UnityEngine.UI;
 
 public class TutorialUI : MonoBehaviour
 {
-    [SerializeField] private Text tutorialText; // Reference to the tutorial text UI element
-    [SerializeField] private GameObject tutorialImage;
+    [SerializeField] private GameObject tutorialBase;
     [SerializeField] private Button exitButton; // Reference to the exit button UI element
     [SerializeField] private float delayBeforeTransition = 0.5f; // Adjust the delay as needed
     [SerializeField] private AudioSource buttonAudioSource;
@@ -14,8 +13,7 @@ public class TutorialUI : MonoBehaviour
     private void Start()
     {
         // Hide the tutorial UI initially
-        tutorialText.gameObject.SetActive(false);
-        tutorialImage.SetActive(false);
+        tutorialBase.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(false);
     }
 
@@ -35,8 +33,7 @@ public class TutorialUI : MonoBehaviour
         yield return new WaitForSeconds(delayBeforeTransition);
 
         // Show the tutorial UI
-        tutorialText.gameObject.SetActive(true);
-        tutorialImage.SetActive(true);
+        tutorialBase.gameObject.SetActive(true);
         exitButton.gameObject.SetActive(true);
     }
 
@@ -55,8 +52,7 @@ public class TutorialUI : MonoBehaviour
         yield return new WaitForSeconds(delayBeforeTransition);
 
         // Hide the tutorial UI
-        tutorialText.gameObject.SetActive(false);
+        tutorialBase.gameObject.SetActive(false);
         exitButton.gameObject.SetActive(false);
-        tutorialImage.SetActive(false);
     }
 }
